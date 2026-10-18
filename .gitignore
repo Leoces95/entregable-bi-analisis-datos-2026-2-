@@ -1,0 +1,15 @@
+datos/*.csv
+datos/*.json
+datos/*.xlsx
+datos/*.xls
+datos/*.xml
+datos/*.yaml
+datos/*.yml
+datos/*.html
+datos/*.css
+datos/*.js
+datos/*.ts
+datos/*.tsx
+datos/*.md
+
+test/*
