@@ -1,0 +1,53 @@
+{
+  "kpis": {
+    "K1 Ingresos totales (USD)": 2261536.7827,
+    "K2 Pedidos": 4922.0,
+    "K3 Ticket medio (USD)": 459.4751691791955,
+    "K4 CAGR de ingresos 2016-2018": 0.25363679301731423,
+    "K5 Cuota de la región líder": 0.3140429507638094,
+    "K6 HHI por estado": 0.07911166833437036,
+    "K7 Tasa de recompra": 0.9836065573770492,
+    "K8 Índice Q4 (venta diaria Q4 / resto)": 1.860887270254323,
+    "K9 Pedidos enviados en ≤ 4 días": 0.6021942299878098,
+    "K10 Clientes nuevos en 2018": 11.0
+  },
+  "hipotesis": {
+    "H1": {
+      "prueba": "t de Welch sobre ln(valor de pedido) 2018 vs 2016",
+      "estadistico": "t = -0.854",
+      "p": 0.393141547290986,
+      "efecto": "d = -0.034"
+    },
+    "H2": {
+      "prueba": "Friedman (regiones × 16 trimestres como bloques)",
+      "estadistico": "χ² = 22.575",
+      "p": 4.951674881436914e-05,
+      "efecto": "W de Kendall = 0.470"
+    },
+    "H3": {
+      "prueba": "Bootstrap (1.000 réplicas) de la cuota del top-20 % de productos",
+      "estadistico": "cuota = 77.6%",
+      "p": 0.000999000999000999,
+      "efecto": "Gini productos = 0.735"
+    },
+    "H4": {
+      "prueba": "Kruskal-Wallis sobre la venta diaria de los 12 meses",
+      "estadistico": "H = 199.00",
+      "p": 1.2009646694143865e-36,
+      "efecto": "ε² = 0.136"
+    },
+    "H5": {
+      "prueba": "Chi-cuadrado de independencia modo de envío × tramo de pedido",
+      "estadistico": "χ² = 11.93",
+      "p": 0.4509230280194586,
+      "efecto": "V de Cramér = 0.028"
+    }
+  },
+  "proyeccion": {
+    "total_2019": 919952.1991873959,
+    "p10": 812188.2061574055,
+    "p90": 1063743.1178005452,
+    "conservador": 868653.0987943738,
+    "mape_validacion": 0.21704039880271808
+  }
+}
